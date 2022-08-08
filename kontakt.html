@@ -20,16 +20,18 @@
     <body>
         <header>
             <div class="container">
-                <div class="main-navbar">
-                    <div class="main-navbar-left">
-                        <h2 id="navigation-logo">
+                <div class="page-header">
+                    <div class="page-header-left">
+                        <h2 id="header-logo">
                             <a href="index.html"
-                                ><span class="web">Web</span
-                                ><span class="studio">Studio</span></a
+                                ><span class="header-logo__web">Web</span
+                                ><span class="header-logo__studio"
+                                    >Studio</span
+                                ></a
                             >
                         </h2>
-                        <nav>
-                            <ul class="navigation-menu">
+                        <nav class="navigation-menu">
+                            <ul>
                                 <li>
                                     <a href="index.html">Agencja</a>
                                 </li>
@@ -37,7 +39,9 @@
                                     <a href="portfolio.html">Portfolio</a>
                                 </li>
                                 <li>
-                                    <a class="stress" href="kontakt.html"
+                                    <a
+                                        class="navigation-menu navigation-menu--stress"
+                                        href="kontakt.html"
                                         >Kontakt</a
                                     >
                                 </li>
@@ -47,7 +51,7 @@
                     <ul class="contacts">
                         <li>
                             <a
-                                class="contacts-links"
+                                class="contacts__links"
                                 href="mailto:info@devstudio.com"
                                 ><svg width="20" height="16">
                                     <use
@@ -58,7 +62,7 @@
                             >
                         </li>
                         <li>
-                            <a class="contacts-links" href="tel:+48111111111"
+                            <a class="contacts__links" href="tel:+48111111111"
                                 ><svg width="15" height="24">
                                     <use
                                         href="images/icons.svg#icon-smartphone"
@@ -74,7 +78,7 @@
         <main>
             <div class="section">
                 <div class="container">
-                    <div class="contact">
+                    <div class="contact-main">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Voluptates, accusamus?
                     </div>
@@ -83,16 +87,20 @@
         </main>
         <footer>
             <div class="container">
-                <div class="main-footer">
-                    <div class="footer-adress">
-                        <h2 id="main-page2">
+                <div class="page-footer">
+                    <div class="footer-contact">
+                        <h2 id="fooder-logo">
                             <a href="index.html"
-                                ><span class="web2">Web</span
-                                ><span class="studio2">Studio</span></a
+                                ><span class="fooder-logo__web">Web</span
+                                ><span class="fooder-logo__studio"
+                                    >Studio</span
+                                ></a
                             >
                         </h2>
-                        <address>m. Warszawa, Aleje Jerozolimskie 21</address>
-                        <ul class="main-address">
+                        <address class="footer-contact__adress">
+                            m. Warszawa, Aleje Jerozolimskie 21
+                        </address>
+                        <ul class="contact-online">
                             <li>
                                 <a href="mailto:info@devstudio.com">
                                     info@devstudio.com</a
@@ -104,30 +112,30 @@
                         </ul>
                     </div>
                     <div class="footer-socialmedia">
-                        <p class="footer-socialmedia-header">dołącz do nas</p>
-                        <ul class="list footer-socialmedia-links">
-                            <li class="footer-socialmedia-link">
+                        <p class="footer-socialmedia__header">dołącz do nas</p>
+                        <ul class="list footer-socialmedia__group">
+                            <li class="footer-socialmedia__link">
                                 <svg width="20" height="20">
                                     <use
                                         href="images/icons.svg#icon-instagram"
                                     ></use>
                                 </svg>
                             </li>
-                            <li class="footer-socialmedia-link">
+                            <li class="footer-socialmedia__link">
                                 <svg width="20" height="20">
                                     <use
                                         href="images/icons.svg#icon-twitter"
                                     ></use>
                                 </svg>
                             </li>
-                            <li class="footer-socialmedia-link">
+                            <li class="footer-socialmedia__link">
                                 <svg width="20" height="20">
                                     <use
                                         href="images/icons.svg#icon-facebook"
                                     ></use>
                                 </svg>
                             </li>
-                            <li class="footer-socialmedia-link">
+                            <li class="footer-socialmedia__link">
                                 <svg width="20" height="20">
                                     <use
                                         href="images/icons.svg#icon-linkedin"
@@ -137,19 +145,19 @@
                         </ul>
                     </div>
                     <div class="newsletter">
-                        <p class="newsletter-header">
+                        <p class="newsletter__header">
                             Zapisz się do newslettera
                         </p>
                         <form name="newsletter" autocomplete="on">
                             <input
-                                class="newsletter-email"
+                                class="newsletter__email"
                                 type="email"
                                 name="newsletter-email"
                                 placeholder="E-mail"
                                 required
                             />
                             <input
-                                class="newsletter-submit"
+                                class="newsletter__submit"
                                 type="submit"
                                 name="newsletter-sumbit"
                                 value="Zapisz się     "
