@@ -315,18 +315,6 @@ header svg {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-form__agreement {
-    line-height: 24px;
-    letter-spacing: var(--letter-spacing);
-    color: #757575;
-}
-
-.modal-form__agreement a {
-    font-size: 14px;
-    line-height: 24px;
-    letter-spacing: var(--letter-spacing);
-}
-
 .modal-form__button {
     display: flex;
     justify-content: center;
@@ -348,21 +336,50 @@ header svg {
         0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-.modal-form__box {
-    display: inline-flex;
+.modal-form__agreement {
+    display: flex;
     align-items: center;
     font-size: 14px;
+    line-height: 1.714;
+    letter-spacing: var(--letter-spacing);
+    color: #757575;
+}
+
+.modal-form__agreement a {
+    font-size: 14px;
+    line-height: 1.714;
+    letter-spacing: var(--letter-spacing);
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+.modal-form__box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-form__agreement::before {
+    content: "";
+    width: 16px;
+    height: 16px;
+    border: 1px solid #000;
+    border-radius: 2px;
+    margin-right: 7px;
+    cursor: pointer;
+}
+.modal-form__checkbox:checked + .modal-form__agreement::before {
+    background-color: #2196f3;
+    border: none;
+    width: 16px;
+    height: 16px;
+    background-image: url(../images/icon\ check.svg);
 }
 
 .modal-form__checkbox {
-    display: flex;
-    place-content: center;
-    margin: 0;
-    margin-right: 6px;
-    background-color: var(--white-color);
-    border: 1px solid;
-    border-radius: 4px;
-    cursor: pointer;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
 }
 
 .advantages {
@@ -553,8 +570,8 @@ figure {
     fill: #afb1b8;
 }
 
-.companies:hover,
-.companies:focus {
+.companies__names:hover,
+.companies__names:focus {
     fill: var(--accent-color);
     border-color: var(--accent-color);
     transition: color 250ms;
