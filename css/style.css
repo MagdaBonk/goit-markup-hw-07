@@ -148,7 +148,7 @@ header svg {
         url(/goit-markup-hw-04/images/background-image.jpg);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 1600px auto;
+    background-size: cover;
     align-items: center;
     height: 600px;
     padding-top: 200px;
@@ -390,7 +390,7 @@ header svg {
 
 .advantages__svg {
     display: flex;
-    width: 270px;
+    width: 100%;
     height: 120px;
     justify-content: center;
     align-items: center;
@@ -400,7 +400,7 @@ header svg {
 }
 
 .advantages__list {
-    width: 100%;
+    flex-grow: 1;
 }
 
 .advantages__title {
@@ -445,6 +445,15 @@ header svg {
     flex-grow: 1;
 }
 
+.work-list__item img {
+    width: 100%;
+    height: auto;
+}
+
+.work-list__item figure {
+    display: flex;
+}
+
 figure {
     padding: 0;
 }
@@ -458,9 +467,9 @@ figure {
     text-transform: uppercase;
     color: var(--white-color);
     padding-top: 27px;
-    width: 370px;
+    width: 100%;
     height: 70px;
-    bottom: 4px;
+    bottom: 0px;
 }
 
 .what-we-do img {
@@ -484,13 +493,13 @@ figure {
 }
 
 .people {
-    display: inline-flex;
+    display: flex;
     gap: 30px;
     list-style-type: none;
 }
 
 .people__card {
-    width: 270px;
+    width: 100%;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
@@ -512,6 +521,15 @@ figure {
     text-align: center;
     letter-spacing: var(--letter-spacing);
     color: var(--descriptions-color);
+}
+
+.people__card img {
+    width: 100%;
+    height: auto;
+}
+
+.people__list {
+    flex-grow: 1;
 }
 
 .team-socialmedia {
