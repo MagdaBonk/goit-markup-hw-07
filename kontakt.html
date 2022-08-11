@@ -18,19 +18,19 @@
         />
     </head>
     <body>
-        <header>
+        <header class="header">
             <div class="container">
-                <div class="page-header">
-                    <div class="page-header-left">
-                        <h2 id="header-logo">
+                <div class="header__page">
+                    <div class="header__page-left">
+                        <h2 id="header__logo">
                             <a href="index.html"
-                                ><span class="header-logo__web">Web</span
-                                ><span class="header-logo__studio"
+                                ><span class="header__logo-web">Web</span
+                                ><span class="header__logo-studio"
                                     >Studio</span
                                 ></a
                             >
                         </h2>
-                        <nav class="navigation-menu">
+                        <nav class="header__navigation">
                             <ul>
                                 <li>
                                     <a href="index.html">Agencja</a>
@@ -40,7 +40,7 @@
                                 </li>
                                 <li>
                                     <a
-                                        class="navigation-menu navigation-menu--stress"
+                                        class="header__navigation header__navigation--stress"
                                         href="kontakt.html"
                                         >Kontakt</a
                                     >
@@ -48,10 +48,10 @@
                             </ul>
                         </nav>
                     </div>
-                    <ul class="contacts">
+                    <ul class="header__contacts">
                         <li>
                             <a
-                                class="contacts__links"
+                                class="header__contacts-links"
                                 href="mailto:info@devstudio.com"
                                 ><svg width="20" height="16">
                                     <use
@@ -62,7 +62,9 @@
                             >
                         </li>
                         <li>
-                            <a class="contacts__links" href="tel:+48111111111"
+                            <a
+                                class="header__contacts-links"
+                                href="tel:+48111111111"
                                 ><svg width="15" height="24">
                                     <use
                                         href="images/icons.svg#icon-smartphone"
@@ -78,13 +80,97 @@
         <main>
             <div class="section">
                 <div class="container">
-                    <div class="contact-main">
+                    <div class="contact__main">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Voluptates, accusamus?
                     </div>
                 </div>
             </div>
         </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__page">
+                    <div class="footer__contact">
+                        <h2 id="fooder__logo">
+                            <a href="index.html"
+                                ><span class="fooder__logo-web">Web</span
+                                ><span class="fooder__logo-studio"
+                                    >Studio</span
+                                ></a
+                            >
+                        </h2>
+                        <address class="footer__adress">
+                            m. Warszawa, Aleje Jerozolimskie 21
+                        </address>
+                        <ul class="footer__list">
+                            <li>
+                                <a href="mailto:info@devstudio.com">
+                                    info@devstudio.com</a
+                                >
+                            </li>
+                            <li>
+                                <a href="tel:+48111111111">+48111111111</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__socialmedia">
+                        <p class="footer__socialmedia-title">dołącz do nas</p>
+                        <ul class="footer__socialmedia-list">
+                            <li class="footer__socialmedia-item">
+                                <svg width="20" height="20">
+                                    <use
+                                        href="images/icons.svg#icon-instagram"
+                                    ></use>
+                                </svg>
+                            </li>
+                            <li class="footer__socialmedia-item">
+                                <svg width="20" height="20">
+                                    <use
+                                        href="images/icons.svg#icon-twitter"
+                                    ></use>
+                                </svg>
+                            </li>
+                            <li class="footer__socialmedia-item">
+                                <svg width="20" height="20">
+                                    <use
+                                        href="images/icons.svg#icon-facebook"
+                                    ></use>
+                                </svg>
+                            </li>
+                            <li class="footer__socialmedia-item">
+                                <svg width="20" height="20">
+                                    <use
+                                        href="images/icons.svg#icon-linkedin"
+                                    ></use>
+                                </svg>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__newsletter">
+                        <p class="footer__newsletter-title">
+                            Zapisz się do newslettera
+                        </p>
+                        <form name="footer__newsletter" autocomplete="on">
+                            <input
+                                class="footer__newsletter-email"
+                                type="email"
+                                name="newsletter-email"
+                                placeholder="E-mail"
+                                required
+                            />
+                            <input
+                                class="footer__newsletter-submit"
+                                type="submit"
+                                name="newsletter-sumbit"
+                                value="Zapisz się     "
+                            /><svg class="footer__newsletter-icon">
+                                <use href="images/icons.svg#icon-send"></use>
+                            </svg>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </footer>
         <footer>
             <div class="container">
                 <div class="page-footer">
