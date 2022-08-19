@@ -132,17 +132,6 @@ body {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.header .header__navigation a:hover,
-.header .header__navigation a:focus,
-.header .header__contacts-links:hover,
-.header .header__contacts-links:focus {
-  color: #2196f3;
-  fill: #2196f3;
-  -webkit-transition: color 250ms;
-  transition: color 250ms;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
 
 #header__logo a {
   text-decoration: none;

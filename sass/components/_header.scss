@@ -86,16 +86,6 @@
             transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         }
     }
-
-    .header__navigation a:hover,
-    .header__navigation a:focus,
-    .header__contacts-links:hover,
-    .header__contacts-links:focus {
-        color: $color_blue;
-        fill: $color_blue;
-        transition: color 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    }
 }
 
 #header__logo a {
