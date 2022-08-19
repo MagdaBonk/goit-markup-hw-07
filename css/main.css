@@ -464,6 +464,20 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
 }
+.footer__list a:hover {
+  color: #2196f3;
+  -webkit-transition: color 250ms;
+  transition: color 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer__list a:focus {
+  color: #2196f3;
+  -webkit-transition: color 250ms;
+  transition: color 250ms;
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
 .footer__list li {
   padding-bottom: 9px;
 }
@@ -473,13 +487,6 @@ body {
   font-style: normal;
   letter-spacing: 0.03em;
   font-size: 14px;
-}
-.footer__list a:hover, .footer__list a:focus {
-  color: #2196f3;
-  -webkit-transition: color 250ms;
-  transition: color 250ms;
-  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer__socialmedia {
   padding-left: 70px;

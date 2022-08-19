@@ -35,6 +35,17 @@
         list-style-type: none;
         display: flex;
         flex-direction: column;
+
+        a:hover {
+            color: $color_blue;
+            transition: color 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        a:focus {
+            color: $color_blue;
+            transition: color 250ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        }
     }
 
     &__list li {
@@ -47,13 +58,6 @@
         font-style: normal;
         letter-spacing: $letter_spacing;
         font-size: 14px;
-    }
-
-    &__list a:hover,
-    &__list a:focus {
-        color: $color_blue;
-        transition: color 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
 
     &__socialmedia {
