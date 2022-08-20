@@ -1,7 +1,11 @@
 .contact {
     background-color: $color_white;
+    display: block;
+    justify-content: center;
+    margin: auto;
 
     &__main {
-        max-height: 100%;
+        display: block;
+        text-align: center;
     }
 }

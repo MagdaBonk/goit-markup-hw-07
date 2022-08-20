@@ -977,7 +977,13 @@ body {
 
 .contact {
   background-color: #ffffff;
+  display: block;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
 }
 .contact__main {
-  max-height: 100%;
+  display: block;
+  text-align: center;
 }/*# sourceMappingURL=main.css.map */
